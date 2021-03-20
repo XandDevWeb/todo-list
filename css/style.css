@@ -33,6 +33,8 @@ main
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
+
+	position: relative;
 }
 
 h1
@@ -49,45 +51,76 @@ h2
 
 ul
 {
-	flex: 1;
+	height: 72%;
 	list-style: none;
 
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
+
+	overflow-y: scroll;
 }
 
 li,
 input
 {
 	background-color: #C4C4C4;
-	padding: 4px 10px 4px 15px;
+	padding: 2px 2px 2px 15px;
 
 	width: 100%;
 
+	font-size: 16px;
+
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+
+li p
+{
+	text-transform: capitalize;
+}
+
+input
+{
+	height: 36px;
+	outline: none;
+}
+
+input:focus
+{
+	box-shadow: 0 0 8px crimson;
 }
 
 li span,
 button
 {
 	font-weight: bold;
-	width: 18px;
-	height: 18px;
-	text-align: center;
+	width: 24px;
+	height: 24px;
 	background-color: #131313;
 	user-select: none;
 	cursor: pointer;
-	color: crimson
+	color: crimson;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 button
 {
-	width: 24px;
-	height: 24px;
+	width: 36px;
+	height: 36px;
 
 	color: lime
+}
+
+form
+{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 
 div.novo-fazer
