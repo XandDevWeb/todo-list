@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+
+	font-family: Comfortaa;
+}
+
+body
+{
+	background-color: #C0C0C0;
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	overflow: hidden;
+}
+
+main
+{
+	padding: 15px 5px 10px 5px;
+	background-color: #928686;
+
+	height: 80vh;
+	width: 70vw;
+
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+h1
+{
+	font-weight: bold;
+	font-size: 24px;
+}
+
+h2
+{
+	font-weight: 200;
+	font-size: 14px;
+}
+
+ul
+{
+	flex: 1;
+	list-style: none;
+
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+li,
+input
+{
+	background-color: #C4C4C4;
+	padding: 4px 10px 4px 15px;
+
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+li span,
+button
+{
+	font-weight: bold;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	background-color: #131313;
+	user-select: none;
+	cursor: pointer;
+	color: crimson
+}
+
+button
+{
+	width: 24px;
+	height: 24px;
+
+	color: lime
+}
+
+div.novo-fazer
+{
+	display: flex;
+}
